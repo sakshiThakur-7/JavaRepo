@@ -8,10 +8,10 @@ public class Swap {
         int b = sc.nextInt();
 
         System.out.println("before: a = " + a + " and before b = " + b);
-        int f = a * b;
-        int g = f / a;
-        int h = f / b;
-        System.out.println("after: a = " + g + " and after b = " + h);
+        a = a * b;
+        b = a / b;
+        a = a / b;
+        System.out.println("after: a = " + a + " and after b = " + b);
 
     }
 }
