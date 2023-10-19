@@ -1,14 +1,18 @@
-import java.util.Scanner;
-
-public class Factorial {
+public class Hollow_Square_Pattern {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter a number : ");
-        int n = in.nextInt();
-        int factorial = 1;
-        for (int i = 1; i <= n ; i++) {
-            factorial *= i;
+        int m = 5;
+        int n = 8;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n ; j++) {
+                     if (i == 4 || i+j == 5 ||   j-i == 3  ){
+                         System.out.print(" * ");
+                     }
+                     else {
+                         System.out.print("   ");
+                     }
+            }
+            System.out.println();
+
         }
-        System.out.println("Factorial is : " + factorial);
     }
 }
